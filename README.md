@@ -189,6 +189,20 @@
     }
 
     setInterval(createBubble, 600);
+      // background music (soft & optional)
+    const audio = new Audio('https://cdn.pixabay.com/download/audio/2022/10/03/audio_8b7c7c0d2b.mp3?filename=gentle-piano-ambient-114998.mp3');
+    audio.loop = true;
+    audio.volume = 0.15;
+
+    function toggleMusic(btn) {
+      if (audio.paused) {
+        audio.play();
+        btn.innerText = 'Pause music 🎵';
+      } else {
+        audio.pause();
+        btn.innerText = 'Play soft music 🎵';
+      }
+    }
   </script>
 </body>
 </html>
