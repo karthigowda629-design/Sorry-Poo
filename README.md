@@ -199,7 +199,7 @@
         audio.play();
         btn.innerText = 'Pause music 🎵';
       } else {
-        audio.pause();
+        audio.pause(); 
         btn.innerText = 'Play soft music 🎵';
       }
     }
